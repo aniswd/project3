@@ -1,0 +1,147 @@
+/*
+==========================================================================
+Media quiries
+==========================================================================
+*/
+
+@media (max-width: 992px) {
+
+	:root {
+		--font_size_medium: 15px;
+	}
+
+	/* Container */
+	._container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* Section */
+	._section_pt {
+		padding-top: 50px;
+	}
+
+	._section_pb {
+		padding-bottom: 50px;
+	}
+
+	._contact ._col_2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	._contact ._form {
+		grid-template-columns: repeat(1, 1fr)!important;
+	}
+
+}
+
+@media (max-width: 768px) {
+	:root {
+		--font_size_normal: 13px;
+		--font_size_small: 13px;
+		--font_size_medium: 18px;
+		--font_size_big: 20px;
+		--font_size_bigger: 55px;
+	}
+
+
+	/* Container */
+	._container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	/* Section */
+	._section_pt {
+		padding-top: 30px;
+	}
+
+	._section_pb {
+		padding-bottom: 30px;
+	}
+
+	._primary_menu_container {
+		/*display: none;*/
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background: #fff;
+	}
+
+	._primary_menu {
+		align-items: flex-start;
+		flex-direction: column;
+		padding: 25px;
+		border: 1px solid var(--border_gray);
+		display: none;
+	}
+
+	._primary_menu li {
+		margin-bottom: 15px;
+		display: block;
+		width: 100%;
+	}
+
+
+	._primary_menu li:last-child a {
+		width: 25%;
+	}
+
+	._primary_nav ._mob_menu_icon {
+		display: block;
+		background: var(--bg_black);
+		color: var(--white);
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		transition: all 0.5s ease;
+	}
+
+	._primary_nav ._mob_menu_icon:hover {
+		background: var(--bg_red);
+	}
+
+}
+
+@media (max-width: 421px) {
+	/* Container */
+	._container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	/* Section */
+
+	._section_pt {
+		padding-top: 20px;
+	}
+
+	._section_pb {
+		padding-bottom: 20px;
+	}
+
+	._primary_menu li:last-child a {
+		width: 40%;
+	}
+
+	._contact ._col_2 {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	._footer ._row_g ._col ._col_inner {
+		text-align: center;
+	}
+
+	._footer ._row_g ._col ._col_inner h3 {
+		display: inline-block;
+	}
+
+	._footer ._row_g ._col ._col_inner h3:after {
+		width: 50%;
+	}
+
+}
