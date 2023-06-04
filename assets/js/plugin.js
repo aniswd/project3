@@ -19,13 +19,13 @@
         });
 
 
-    // Nav menu slide toggle start
+    // Nav menu slide toggle
     $("._mob_menu_icon").click(function(){
     $("._primary_menu").slideToggle(700);
     });
 
      $("._mob_menu_icon").click(function(){
-    $("#primaryNav").addClass('_primary_nav_bg');
+      $("#primaryNav").addClass('_primary_nav_bg');
     });
 
     // Clients
@@ -47,13 +47,13 @@
     })
 
 
-    // Countet up start
+    // Countet up
     $('._counts').counterUp({
             delay: 10,
             time: 1000
         });
 
-    /* Accordian */
+    /* FAQ */
       var icons = {
           header: "ui-icon-circle-arrow-e",
           activeHeader: "ui-icon-circle-arrow-s"
@@ -68,6 +68,20 @@
             $( "#accordion" ).accordion( "option", "icons", icons );
           }
         });
+
+      // SCROLLIT         
+      $.scrollIt({
+          upKey: 38,
+          downKey: 40,
+          easing: "swing",
+          scrollTime: 700,
+          activeClass: "active",
+          onPageChange: null,
+          topOffset: -15
+      });
+
+      // WOW ANIMATE
+      new WOW().init();
 
 
 
