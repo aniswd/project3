@@ -15,23 +15,24 @@
   	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
   	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
   	<link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  	<link rel="stylesheet" href="assets/css/animate.css">
   	<link rel="stylesheet" href="assets/css/grid.css">
   	<link rel="stylesheet" href="assets/css/style.css">
   	<link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
 	<!-- Header -->
-	<header id="header" class="_header">
+	<header id="header" class="_header"  data-scroll-index="0">
 		<nav id="primaryNav" class="_primary_nav _container_fw">
 			<div id="logo" class="_logo">
 				<a href="index.html"><img src="assets/img/logo.png"></a>
 			</div>
 			<div id="primaryMenuContainer" class="_primary_menu_container">
 				<ul id="primaryMenu" class="_primary_menu">
-					<li><a href="index.html"><i class="fa fa-home"></i> home</a></li>
-					<li><a href="#"><i class="fa fa-suitcase"></i> careers</a></li>
-					<li><a href="#"><i class="fa fa-history"></i> about us</a></li>
-					<li><a href="#"><i class="fa fa-address-book"></i> contact</a></li>
+					<li><a href="index.html" data-scroll-nav="0"><i class="fa fa-home"></i> home</a></li>
+					<li><a href="#" data-scroll-nav="1"><i class="fa fa-suitcase"></i> careers</a></li>
+					<li><a href="#" data-scroll-nav="2"><i class="fa fa-history"></i> about us</a></li>
+					<li><a href="#" data-scroll-nav="3"><i class="fa fa-address-book"></i> contact</a></li>
 				</ul>
 			</div>
 			<div id="mobMenuCloseIcon" class="_mob_menu_icon">
@@ -50,8 +51,12 @@
 		</div>
 	</header>
 	<!-- Careers -->
-	<section id="career" class="_career _section_pt _section_pb _border_bottom">
+	<section id="career" class="_career _section_pt _section_pb _border_bottom" data-scroll-index="1">
 		<div class="_container">
+			<div class="_section_headline wow fadeInUp">
+				<h3>services</h3>
+				<h2>what we can do for you</h2>
+			</div>
 			<div class="_row_g _col_3">
 				<div class="_col">
 					<h3><span>0.1 </span>Carrier Dispatching</h3>
@@ -87,12 +92,12 @@
 		</div>
 	</section>
 
-	<!-- Service -->
-	<section id="service" class="_service _section_pb _section_pt _border_bottom">
+	<!-- About us -->
+	<section id="aboutus" class="_aboutus _section_pb _section_pt _border_bottom" data-scroll-index="2">
 		<div class="_container">
-			<div class="_section_headline">
-				<h3>services</h3>
-				<h2>what we can do for you</h2>
+			<div class="_section_headline wow fadeInUp">
+				<h3>about us</h3>
+				<h2>a little bite about us</h2>
 			</div>
 			<div class="_row_g _col_4">
 				<div class="_col _about">
@@ -156,7 +161,7 @@
 	</section>
 	<section id="testimonial" class="_testmonial _section_pt _border_bottom">
 		<div class="_container">
-			<div class="_section_headline">
+			<div class="_section_headline wow fadeInUp">
 				<h3>testmonials</h3>
 				<h2>what our clients says</h2>
 			</div>
@@ -225,7 +230,7 @@
 	</section>
 	<section id="client" class="_client _section_pt _section_pb _border_bottom">
 		<div class="_container">
-			<div class="_section_headline">
+			<div class="_section_headline wow fadeInUp">
 				<h3>clients</h3>
 				<h2>our honorable clients</h2>
 			</div>
@@ -241,12 +246,12 @@
 			</ul> -->
 		</div>
 	</section>
-	<section id="contact" class="_contact _section_pt _section_pb _border_bottom">
+	<section id="contact" class="_contact _section_pt _section_pb _border_bottom" data-scroll-index="3">
 		<div class="_container">
 			<div class="_row_g _col_2 _grid_gap">
 				<div class="_col">
 					<div class="_col_inner">
-						<div class="_section_headline">
+						<div class="_section_headline wow fadeInUp">
 							<h3>contact</h3>
 							<h2>need a quote?</h2>
 						</div>
@@ -282,7 +287,7 @@
 				</div>
 				<div class="_col">
 					<div class="_col_inner">
-						<div class="_section_headline">
+						<div class="_section_headline wow fadeInUp">
 							<h3>faq</h3>
 							<h2>have some questions?</h2>
 						</div>
@@ -340,7 +345,7 @@
 	<footer id="footer" class="_footer _section_pb _section_pt">
 		<div class="_container">
 			<div class="_row_g _col_4">
-				<div class="_col">
+				<div class="_col wow fadeInUp">
 					<div class="_col_inner">
 						<h3>contact information</h3>
 						<p><i class="fa fa-envelope"></i> example@logistic.com</p>
@@ -348,7 +353,7 @@
 						<p><i class="fa fa-map-signs"></i> Brooklyn, NY 10036,<br/>United States</p>
 					</div>
 				</div>
-				<div class="_col">
+				<div class="_col wow fadeInUp">
 					<div class="_col_inner">
 						<h3>about us</h3>
 						<a href="#">history</a>
@@ -356,7 +361,7 @@
 						<a href="#">our partner</a>
 					</div>
 				</div>
-				<div class="_col">
+				<div class="_col wow fadeInUp">
 					<div class="_col_inner">
 						<h3>Services</h3>
 						<a href="#">Carrier Dispatching</a>
@@ -364,13 +369,13 @@
 						<a href="#">roadway transportation</a>
 					</div>
 				</div>
-				<div class="_col">
+				<div class="_col wow fadeInUp">
 					<div class="_col_inner">
 						<h3>Links</h3>
-						<a href="#">location</a>
-						<a href="#">site maps</a>
-						<a href="#">get a quotes</a>
-						<a href="#">careers</a>
+						<a href="index.html" data-scroll-nav="0">home</a>
+						<a href="#" data-scroll-nav="1">careers</a>
+						<a href="#" data-scroll-nav="2">about us</a>
+						<a href="#" data-scroll-nav="3">get a quotes</a>
 					</div>
 				</div>
 			</div>
@@ -392,6 +397,8 @@
   <script src="assets/js/jquery.counterup.min.js"></script>
   <script src="assets/js/jquery.waypoints.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/scrollIt.js"></script>
+  <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/plugin.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
