@@ -283,6 +283,7 @@ Layout syle
 	transition: 0.5s ease;
 	padding-left: 20px;
 	padding-right: 20px;
+	height: 70px;
 	z-index: 999;
 }
 
@@ -290,7 +291,6 @@ Layout syle
 	transition: 0.5s ease;
 	background: #fff;
 	box-shadow: 0 1px 10px 0 #ddd;
-	height: 70px;
 }
 
 ._primary_nav ._mob_menu_icon {
