@@ -322,6 +322,10 @@ Layout syle
 	color: var(--menu_link_hover_color);
 }
 
+._primary_menu li a.active {
+	color: var(--menu_link_hover_color);
+}
+
 ._primary_menu li:last-child a {
 	background: var(--red);
 	color: var(--white);
@@ -331,6 +335,10 @@ Layout syle
 }
 
 ._primary_menu li:last-child a:hover {
+	background: var(--bg_black);
+}
+
+._primary_menu li:last-child a.active {
 	background: var(--bg_black);
 }
 
@@ -376,13 +384,13 @@ Layout syle
 
 /* Career*/
 
-._career h3 {
+._career ._col h3 {
 	margin-bottom: 40px;
 	text-transform: uppercase;
 	position: relative;
 }
 
-._career h3:before {
+._career ._col h3:before {
 	position: absolute;
 	content: "";
 	bottom: -10px;
@@ -391,7 +399,7 @@ Layout syle
 	border-bottom: 1px solid var(--border_gray);
 }
 
-._career h3 span {
+._career ._col h3 span {
 	color: var(--red);
 }
 
@@ -405,29 +413,29 @@ Layout syle
 
 /* service */
 
-._service {
+._aboutus {
 	background: var(--bg_gray_lite);
 }
 
-._service ._row_g {
+._aboutus ._row_g {
 	grid-gap: 40px;
 }
 
-._service ._col {
+._aboutus ._col {
 	padding: 30px 40px;
 	border: 1px solid var(--border_gray);
 	background: var(--bg_white);
 }
 
-._service ._about {
+._aboutus ._about {
 	background: var(--red);
 }
 
-._service ._about ._icon {
+._aboutus ._about ._icon {
     color: var(--white)!important;
 }
 
-._service ._col ._col_inner ._icon {
+._aboutus ._col ._col_inner ._icon {
     width: 60px;
     height: 60px;
     font-size: 44px;
@@ -436,23 +444,23 @@ Layout syle
     color: var(--red);
 }
 
-._service ._col ._col_inner h3 a {
+._aboutus ._col ._col_inner h3 a {
 	text-transform: uppercase;
 	color: var(--title_color);
 	transition: all 0.5s ease;
 }
 
-._service ._col ._col_inner h3 a:hover {
+._aboutus ._col ._col_inner h3 a:hover {
 	color: var(--link_hover_color);
 }
 
-._service ._col ._col_inner h3 {
+._aboutus ._col ._col_inner h3 {
 	margin-top: 17px;
 	margin-bottom: 15px;
 }
 
-._service ._about h3 a,
-._service ._about p {
+._aboutus ._about h3 a,
+._aboutus ._about p {
  color: var(--white)!important;	
 }
 
