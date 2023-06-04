@@ -2,7 +2,6 @@
  
 
     // Navbar
-
     $(window).scroll(function(){
     if($(this).scrollTop() > 10){
 	   $("#primaryNav").addClass('_primary_nav_bg');
@@ -21,18 +20,15 @@
 
 
     // Nav menu slide toggle start
-
     $("._mob_menu_icon").click(function(){
     $("._primary_menu").slideToggle(700);
-    $("#primaryNav").toggleClass('_primary_nav_bg');
     });
 
-
-    // Nav menu slide toggle end
-
+     $("._mob_menu_icon").click(function(){
+    $("#primaryNav").addClass('_primary_nav_bg');
+    });
 
     // Clients
-
    $('._clients_slide').owlCarousel({
         loop:true,
         margin:10,
