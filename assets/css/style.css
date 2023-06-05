@@ -384,6 +384,11 @@ Layout syle
 
 /* Career*/
 
+._career ._col_3 ._col {
+	box-shadow: 0px 3px 10px #ddd;
+    padding: 25px;
+}
+
 ._career ._col h3 {
 	margin-bottom: 40px;
 	text-transform: uppercase;
